@@ -22,7 +22,7 @@ const theme = createTheme({
 
 const MainText = () => {
   return (
-    <Box ml={205}>
+    <Box ml={255}>
       <Typography variant="h2" color="common.white" mb={2}>
         Nice to meet you!
       </Typography>
