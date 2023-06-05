@@ -1,5 +1,5 @@
 
-
+import MainImage from "./MainImage";
 
 const ImageRandomizer = () => {
 
@@ -11,8 +11,11 @@ const ImageRandomizer = () => {
 
   const randomIndex = Math.floor(Math.random() * urls.length);
   const randomUrl = urls[randomIndex];
- 
-  return randomUrl;
+
+  console.log(randomUrl);
+  
+  return <><MainImage imageUrl={randomUrl} /></>
+  
 };
 
 export default ImageRandomizer;

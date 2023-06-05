@@ -34,6 +34,7 @@ const MainText = () => {
         <Button variant="contained" color="secondary" >
           More about Me
         </Button>
+        
        
         </ThemeProvider>
       </Box>
