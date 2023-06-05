@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@mui/styles';
 import MainText from './MainText';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
