@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     height: '100vh',
-    backgroundImage: 'url(https://miro.medium.com/v2/resize:fit:720/format:webp/1*jbvqG9vT9ishTLzl_CVbiw.jpeg)',
+    backgroundImage: 'url(https://cdn.pixabay.com/photo/2023/03/06/11/39/ai-generated-7833307_960_720.jpg)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   },
