@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
-import MainText from './MainText';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 const MainImage = () => {
   const classes = useStyles();
 
-  return <div className={classes.root}> <MainText/></div>;
+  return <div className={classes.root}></div>;
 };
 
 export default MainImage;
