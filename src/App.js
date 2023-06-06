@@ -3,6 +3,7 @@ import React from 'react';
 
 import Landing from './pages/Landing';
 import AboutMe from './pages/AboutMe';
+import NotFound from './pages/NotFound';
 
 import { Routes, Route } from "react-router-dom";
 

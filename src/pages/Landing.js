@@ -1,5 +1,5 @@
 
-
+import MainImage from "../components/MainImage";
 
 const Landing = () => {
     const urls = [
