@@ -1,6 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Typography, Button, Box } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import AboutMe from './AboutMe';
+
+import { useHistory } from 'react-router-dom';
+
 
 const theme = createTheme({
   palette: {
@@ -21,6 +25,22 @@ const theme = createTheme({
 
 
 const MainText = () => {
+
+
+  const [showAboutMe, setShowAboutMe] = useState(false);
+
+  const handleClick = () => {
+    setShowAboutMe(!showAboutMe);
+  };
+
+
+  const history = useHistory();
+
+  const handleClick2 = () => {
+    history.push('pages/AboutMe.js'); // Replace '/other-page' with the path of your desired page
+  };
+
+
   return (
     <Box ml={255}>
       <Typography variant="h2" color="common.white" mb={2}>
@@ -31,10 +51,10 @@ const MainText = () => {
       </Typography>
       <Box mt={5}>
       <ThemeProvider theme={theme}>
-        <Button variant="contained" color="secondary" >
+        <Button variant="contained" color="secondary"  onClick={handleClick2}>
           More about Me
         </Button>
-        
+        {showAboutMe &&  <AboutMe />}
        
         </ThemeProvider>
       </Box>
