@@ -1,6 +1,7 @@
 
 import MainImage from "../components/MainImage";
 
+
 const Landing = () => {
     const urls = [
         'https://cdn.pixabay.com/photo/2023/03/06/11/39/ai-generated-7833307_960_720.jpg',

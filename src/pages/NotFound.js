@@ -1,6 +1,6 @@
 import Typography from '@mui/material/Typography';
 
-
+import { Box } from '@mui/material';
 
 import { makeStyles } from '@mui/styles';
 
@@ -23,16 +23,22 @@ function NotFound() {
     
     return (
         <div className={classes.root} style={{ backgroundImage: `url(https://images.nightcafe.studio/jobs/Ulr7rJfLhEqiKE2SCNNn/Ulr7rJfLhEqiKE2SCNNn--100--JBXY1_2x.jpg?tr=w-9999,c-at_max)` }}>
-         
+
+    <Box  
+    ml={255} mt={50} 
+    sx={{
+      backgroundColor: 'rgba(100, 47, 38, 0.5)', // 50% transparent grey
+     
+    }}>
     <Typography 
-    pt={10} 
-    pb={10} 
+   
     variant='h1' 
     align='center'
+    color="common.white"
    >
     Page not found
     </Typography>
-        
+    </Box>
         </div>
       );
     
