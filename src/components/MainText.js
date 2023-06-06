@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Typography, Button, Box } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import AboutMe from './AboutMe';
+import AboutMe from '../pages/AboutMe';
 
 import { useHistory } from 'react-router-dom';
 
@@ -37,7 +37,7 @@ const MainText = () => {
   const history = useHistory();
 
   const handleClick2 = () => {
-    history.push('pages/AboutMe.js'); // Replace '/other-page' with the path of your desired page
+    history.push('pages/AboutMe.js');
   };
 
 
