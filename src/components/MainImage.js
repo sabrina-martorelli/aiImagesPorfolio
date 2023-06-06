@@ -22,7 +22,7 @@ const MainImage = ({ imageList }) => {
     setRandomImage(imageList[randomIndex]);
   };
 
-  // Call getRandomImage initially to set an initial random image
+  
   useState(getRandomImage);
 
   return (

@@ -11,14 +11,15 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
 
-
+return (
+<>
   <Routes>
       <Route path="/" element ={<Landing />} />
-      <Route path="/AboutMe" element ={<AboutMe />} />
+      <Route path="/aboutme" element ={<AboutMe />} />
       <Route path="*" element={<NotFound />} />       
-    </Routes>
-
-
+  </Routes>
+  </>
+);
 
 }
 

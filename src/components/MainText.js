@@ -35,7 +35,7 @@ const MainText = () => {
       </Typography>
       <Box mt={5}>
       <ThemeProvider theme={theme}>
-        <Link to='pages/AboutMe.js'>
+        <Link to='./pages/AboutMe.js'>
         <Button variant="contained" color="secondary" >
           More about Me
         </Button>

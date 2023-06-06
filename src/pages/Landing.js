@@ -11,11 +11,11 @@ const Landing = () => {
         'https://www.analyticsinsight.net/wp-content/uploads/2023/04/8-FREE-NSFW-AI-Art-Generators-to-Create-Images-from-Text.jpg',
       ];
     
-    
-    
+ 
       return (
     
         <>
+       
           <MainImage imageList={urls} />
         </>
       );
