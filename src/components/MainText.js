@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Typography, Button, Box } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import AboutMe from '../pages/AboutMe';
+import { Link } from 'react-router-dom';
 
-import { useHistory } from 'react-router-dom';
 
 
 const theme = createTheme({
@@ -26,21 +25,6 @@ const theme = createTheme({
 
 const MainText = () => {
 
-
-  const [showAboutMe, setShowAboutMe] = useState(false);
-
-  const handleClick = () => {
-    setShowAboutMe(!showAboutMe);
-  };
-
-
-  const history = useHistory();
-
-  const handleClick2 = () => {
-    history.push('pages/AboutMe.js');
-  };
-
-
   return (
     <Box ml={255}>
       <Typography variant="h2" color="common.white" mb={2}>
@@ -51,10 +35,12 @@ const MainText = () => {
       </Typography>
       <Box mt={5}>
       <ThemeProvider theme={theme}>
-        <Button variant="contained" color="secondary"  onClick={handleClick2}>
+        <Link to='pages/AboutMe.js'>
+        <Button variant="contained" color="secondary" >
           More about Me
         </Button>
-        {showAboutMe &&  <AboutMe />}
+        </Link>
+       
        
         </ThemeProvider>
       </Box>
