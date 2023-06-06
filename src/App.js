@@ -1,7 +1,8 @@
 
 import React from 'react';
 
-import MainImage from './components/MainImage';
+import Landing from './pages/Landing';
+import AboutMe from './pages/AboutMe';
 
 import { Routes, Route } from "react-router-dom";
 
@@ -13,6 +14,7 @@ function App() {
   <Routes>
       <Route path="/" element ={<Landing />} />
       <Route path="/AboutMe" element ={<AboutMe />} />
+      <Route path="*" element={<NotFound />} />       
     </Routes>
 
 
