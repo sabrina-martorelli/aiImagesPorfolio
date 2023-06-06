@@ -1,48 +1,60 @@
 import React from 'react';
-import { Typography, Button, Box } from '@mui/material';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 
+import { Typography, Button, Box } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
+const TrendyButton = styled(Button)(({ theme }) => ({
+  backgroundColor: '#f44336', 
+  color: '#fff',
+  borderRadius: '24px',
+  padding: '12px 24px',
+  fontWeight: 'bold',
+  textTransform: 'uppercase',
+  boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.25)',
+  transition: 'background-color 0.3s ease',
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      light: '#757ce8',
-      main: '#3f50b5',
-      dark: '#002884',
-      contrastText: '#fff',
-    },
-    secondary: {
-      light: '#ff7961',
-      main: '#f44336',
-      dark: '#ba000d',
-      contrastText: '#000',
-    },
+  '&:hover': {
+    backgroundColor: '#ff7961', 
   },
-});
+  '& a': {
+    textDecoration: 'none',
+    color: '#fff',
+    fontWeight: 'inherit',
+  },
+}));
+
 
 
 const MainText = () => {
 
   return (
-    <Box ml={255}>
-      <Typography variant="h2" color="common.white" mb={2}>
+    <Box ml={255} mt={50} 
+    
+    sx={{
+      backgroundColor: 'rgba(128, 128, 128, 0.2)', // 50% transparent grey
+     
+    }}
+    >
+      <Typography variant="h2" color="common.white" mb={2} pt={2} pl={2}>
         Nice to meet you!
       </Typography>
-      <Typography variant="h5" color="common.white">
+      <Typography variant="h5" color="common.white"  pl={2}>
         I'm an experienced and passionate software engineer, always eager to learn and grow, keeping up to date with tech and best practices.
       </Typography>
-      <Box mt={5}>
-      <ThemeProvider theme={theme}>
-        <Link to='./pages/AboutMe.js'>
-        <Button variant="contained" color="secondary" >
-          More about Me
-        </Button>
-        </Link>
+      <Box mt={3}  pl={2} pb={2}>
+    
+
+
+    <TrendyButton component={Link} to="./pages/AboutMe.js">
+      <span>   More about Me</span>
+    </TrendyButton>
+
        
        
-        </ThemeProvider>
+       
+       
+      
       </Box>
     </Box>
   );
