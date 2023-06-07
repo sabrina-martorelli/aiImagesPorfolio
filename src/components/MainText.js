@@ -46,7 +46,7 @@ const MainText = () => {
     
 
 
-    <TrendyButton component={Link} to="./pages/AboutMe.js">
+    <TrendyButton component={Link} to="/aboutme">
       <span>   More about Me</span>
     </TrendyButton>
 
