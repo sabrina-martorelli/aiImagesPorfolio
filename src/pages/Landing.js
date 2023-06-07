@@ -1,6 +1,6 @@
 
 import MainImage from "../components/MainImage";
-
+import MainText from "../components/MainText";
 
 const Landing = () => {
     const urls = [
@@ -18,6 +18,7 @@ const Landing = () => {
         <>
        
           <MainImage imageList={urls} />
+          <MainText/>
         </>
       );
     
