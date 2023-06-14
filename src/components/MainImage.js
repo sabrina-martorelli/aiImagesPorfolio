@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@mui/styles';
+import MainText from './MainText';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,12 +26,8 @@ const MainImage = ({ imageList }) => {
   useState(getRandomImage);
 
   return (
-    <div 
-    className={classes.root} 
-    style={{ backgroundImage: `url(${randomImage})` }
-    }>
-      
-
+    <div className={classes.root} style={{ backgroundImage: `url(${randomImage})` }}>
+      <MainText/>
     
     </div>
   );
