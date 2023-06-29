@@ -27,17 +27,25 @@ const AboutMeText = () => {
         <Grid item xs={2} sm={4} md={2} key={index} 
         style={{display: 'flex'}}
       
+        
         >
           <Card 
+
+
+
           style={{
+            backgroundColor: 'rgba(207, 183, 183, 0.9)', // 50% transparent grey
+           
             display: 'flex', 
             justifyContent: 'space-between', 
             flexDirection: 'column'}}>
-            <CardContent >
+            <CardContent
+            
+            >
               <Typography variant="h4" component="div" pb={2} >
                 {card.title}
               </Typography>
-              <Typography variant="h5" color="text.secondary" >
+              <Typography variant="h5" color="text.secondary"  >
                 {card.content}
               </Typography>
             </CardContent>
