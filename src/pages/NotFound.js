@@ -3,6 +3,7 @@ import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
 
 import { makeStyles } from '@mui/styles';
+import NotFoundText from '../components/NotFoundText';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -24,16 +25,8 @@ function NotFound() {
     return (
         <div className={classes.root} style={{ backgroundImage: `url(https://images.nightcafe.studio/jobs/Ulr7rJfLhEqiKE2SCNNn/Ulr7rJfLhEqiKE2SCNNn--100--JBXY1_2x.jpg?tr=w-9999,c-at_max)` }}>
 
-    <Box  
-    ml={155} mt={50} 
-    sx={{
-      backgroundColor: 'rgba(100, 47, 38, 0.5)', // 50% transparent grey
-     
-    }}>
-    <Typography variant="h2" color="common.white" mb={2} pt={2} pl={2}>
-        Page not found
-      </Typography>
-    </Box>
+ <NotFoundText/>
+
         </div>
       );
     
