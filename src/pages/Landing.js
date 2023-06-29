@@ -1,5 +1,19 @@
 
 import MainImage from "../components/MainImage";
+import MainText from '../components/MainText'
+import React, { useState } from 'react';
+import { makeStyles } from '@mui/styles';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  },
+}));
 
 const Landing = () => {
     const urls = [
@@ -12,11 +26,32 @@ const Landing = () => {
       ];
     
  
+      const classes = useStyles();
+      const [randomImage, setRandomImage] = useState('');
+    
+      const getRandomImage = () => {
+        const randomIndex = Math.floor(Math.random() * urls.length);
+        setRandomImage(urls[randomIndex]);
+      };
+    
+      
+      useState(getRandomImage);
+
+
       return (
     
         <>
        
-          <MainImage imageList={urls} />
+          {/* <MainImage imageList={urls} /> */}
+
+
+          <div className={classes.root} style={{ backgroundImage: `url(${randomImage})` }}>
+          <MainText/>   
+          </div>
+
+
+
+
         </>
       );
     
