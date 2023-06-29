@@ -34,8 +34,7 @@ const AboutMeText = () => {
 
 
           style={{
-            backgroundColor: 'rgba(207, 183, 183, 0.9)', // 50% transparent grey
-           
+            backgroundColor: 'rgba(207, 183, 183, 0.9)',       
             display: 'flex', 
             justifyContent: 'space-between', 
             flexDirection: 'column'}}>

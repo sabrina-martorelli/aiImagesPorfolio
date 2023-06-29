@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { makeStyles } from '@mui/styles';
 import AboutMeText from '../components/AboutMeText';
 import urls from '../data/dataAboutMe.json'
+import TabsIcon from '../components/TabsIcon';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,8 +45,9 @@ const AboutMe = () => {
           <div className={classes.root} style={{ backgroundImage: `url(${randomImage})` }}>
           <AboutMeText/>   
 
-     
+         
           </div>
+          <TabsIcon/>
 
 
 

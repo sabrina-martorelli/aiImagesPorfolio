@@ -40,6 +40,7 @@ const Landing = () => {
 
           <div className={classes.root} style={{ backgroundImage: `url(${randomImage})` }}>
           <LandingText/>   
+        
           </div>
 
 
