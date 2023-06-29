@@ -26,7 +26,7 @@ const TrendyButton = styled(Button)(({ theme }) => ({
 
 
 
-const MainText = () => {
+const LandingText = () => {
 
   return (
     <Box ml={155} mt={50} 
@@ -49,4 +49,4 @@ const MainText = () => {
   );
 };
 
-export default MainText;
+export default LandingText;

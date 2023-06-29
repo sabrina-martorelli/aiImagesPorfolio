@@ -1,6 +1,6 @@
 
-import MainImage from "../components/MainImage";
-import MainText from '../components/LandingText'
+
+import LandingText from '../components/LandingText'
 import React, { useState } from 'react';
 import { makeStyles } from '@mui/styles';
 
