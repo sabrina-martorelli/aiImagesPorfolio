@@ -27,8 +27,7 @@ const MainImage = ({ imageList }) => {
 
   return (
     <div className={classes.root} style={{ backgroundImage: `url(${randomImage})` }}>
-      <MainText/>
-    
+      <MainText/>   
     </div>
   );
 };

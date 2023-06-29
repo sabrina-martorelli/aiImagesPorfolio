@@ -29,7 +29,7 @@ const TrendyButton = styled(Button)(({ theme }) => ({
 const MainText = () => {
 
   return (
-    <Box ml={255} mt={50}
+    <Box ml={155} mt={50} 
       sx={{
         backgroundColor: 'rgba(128, 128, 128, 0.2)', // 50% transparent grey
       }}
@@ -42,7 +42,7 @@ const MainText = () => {
       </Typography>
       <Box mt={3} pl={2} pb={2}>
         <TrendyButton component={Link} to="/aboutme">
-          <span>   More about Me</span>
+          <span>More about Me</span>
         </TrendyButton>
       </Box>
     </Box>
