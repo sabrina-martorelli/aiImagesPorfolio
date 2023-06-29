@@ -1,23 +1,7 @@
 
-
-
 import Typography from '@mui/material/Typography';
-
 import { Box } from '@mui/material';
 
-import { makeStyles } from '@mui/styles';
-
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  },
-}));
 
 const NotFoundText = () => {
     return ( 
@@ -44,4 +28,4 @@ const NotFoundText = () => {
      );
 }
  
-export default NotFoundtext;
+export default NotFoundText;
