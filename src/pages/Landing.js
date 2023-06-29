@@ -1,6 +1,6 @@
 
 import MainImage from "../components/MainImage";
-import MainText from '../components/MainText'
+import MainText from '../components/LandingText'
 import React, { useState } from 'react';
 import { makeStyles } from '@mui/styles';
 
@@ -42,11 +42,11 @@ const Landing = () => {
     
         <>
        
-          {/* <MainImage imageList={urls} /> */}
+         
 
 
           <div className={classes.root} style={{ backgroundImage: `url(${randomImage})` }}>
-          <MainText/>   
+          <LandingText/>   
           </div>
 
 
