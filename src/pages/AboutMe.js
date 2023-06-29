@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { makeStyles } from '@mui/styles';
 import AboutMeText from '../components/AboutMeText';
 
+
 //https://cdn.pixabay.com/photo/2023/02/13/16/14/ai-generated-7787714_1280.jpg
 
 
@@ -47,6 +48,8 @@ const AboutMe = () => {
 
           <div className={classes.root} style={{ backgroundImage: `url(${randomImage})` }}>
           <AboutMeText/>   
+
+      
           </div>
 
 
