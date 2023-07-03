@@ -34,17 +34,20 @@ const AboutMeText = () => {
 
 
           style={{
-            backgroundColor: 'rgba(207, 183, 183, 0.9)',       
+            backgroundColor: 'rgba(0, 0, 0, 0.9)',   
+            color: 'white',    
             display: 'flex', 
             justifyContent: 'space-between', 
             flexDirection: 'column'}}>
             <CardContent
             
             >
-              <Typography variant="h4" component="div" pb={2} >
+              <Typography variant="h4" component="div" pb={2}
+              color="common.white"
+              >
                 {card.title}
               </Typography>
-              <Typography variant="h5" color="text.secondary"  >
+              <Typography variant="h5"  color="common.white"  >
                 {card.content}
               </Typography>
             </CardContent>

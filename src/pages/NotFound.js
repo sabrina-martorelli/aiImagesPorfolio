@@ -25,6 +25,7 @@ function NotFound() {
       <NotFoundText/>
 
         </div>
+        
       );
     
     

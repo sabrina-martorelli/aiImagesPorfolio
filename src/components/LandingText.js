@@ -29,7 +29,7 @@ const TrendyButton = styled(Button)(({ theme }) => ({
 const LandingText = () => {
 
   return (
-    <Box ml={155} mt={50} 
+    <Box ml={230} mt={100} 
       sx={{
         backgroundColor: 'rgba(128, 128, 128, 0.2)', // 50% transparent grey
       }}
